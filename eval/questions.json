@@ -1,0 +1,15 @@
+[
+  {"id": "fact-1", "type": "single fact", "question": "How many days of annual leave does an employee with 12 years of service get?", "expect": ["30"], "docs": ["hr_handbook.pdf"]},
+  {"id": "fact-2", "type": "single fact", "question": "What is the hotel limit per night in the Gulf countries?", "expect": ["180"], "docs": ["travel_expense_policy.docx"]},
+  {"id": "fact-3", "type": "single fact", "question": "Who assembles the Vista 55 TV?", "expect": ["Sunrise"], "docs": ["company_overview.md"]},
+  {"id": "arabic-1", "type": "arabic", "question": "كم عدد أيام إجازة الأبوة؟", "expect": ["10|١٠"], "docs": ["hr_handbook.pdf"]},
+  {"id": "arabic-2", "type": "arabic", "question": "ما هي مدة الرد على حوادث SEV1؟", "expect": ["15|١٥"], "docs": ["it_security_policy.docx"]},
+  {"id": "compare-1", "type": "comparison", "question": "How did the number of remote days per week and the eligibility period change between the 2023 and 2026 remote work policies?", "expect": ["1 day|one day", "3 days|three days", "12 months|twelve months|12-month", "probation|three-month|three months|3 months"], "docs": ["remote_work_policy_2023.md", "remote_work_policy_2026.md"]},
+  {"id": "compare-2", "type": "comparison", "question": "Which risk from the 2024 annual report was resolved in 2025, and how?", "expect": ["installer", "Academy"], "docs": ["annual_report_2024.pdf", "annual_report_2025.pdf"]},
+  {"id": "multi-1", "type": "multi-hop", "question": "Did Nilora meet all three goals the board set for 2025? Give the actual figure for each goal.", "expect": ["49", "3.9", "{gulf_growth}"], "docs": ["annual_report_2024.pdf", "annual_report_2025.pdf"]},
+  {"id": "multi-2", "type": "multi-hop", "question": "What does Nilora Care cost for a Breeze Smart AC at the 2025 price, and what is the total warranty length with it?", "expect": ["1,992|1992", "60|5 years|five years"], "docs": ["warranty_and_returns.pdf", "sales_data.csv"]},
+  {"id": "multi-3", "type": "multi-hop", "question": "A manager earns EGP 45,000 per month and scored 4.6. What is the annual bonus, and what is the notice period?", "expect": ["90,000|90000", "two months|2 months|two-month"], "docs": ["hr_handbook.pdf"]},
+  {"id": "data-1", "type": "data analysis", "question": "Which product sold the most units in the Gulf Export region in 2025, and how many?", "expect": ["Aria Buds", "{gulf_top_units}"], "docs": ["sales_data.csv"]},
+  {"id": "data-2", "type": "data analysis", "question": "What is the average monthly salary in Engineering?", "expect": ["{eng_salary}"], "docs": ["employees.csv"]},
+  {"id": "missing-1", "type": "not in documents", "question": "What is the dental insurance coverage limit for employees?", "expect": ["not |no |n't"], "docs": []}
+]
